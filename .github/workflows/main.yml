@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          source: './apps/web/.next, ./apps/web/*, ./apps/web/.*, ./apps/api, ./deploy.config.js, ./package*.json, ./turbo.json, ./.husky'
+          source: './apps/web/.next, ./apps/web/*, ./apps/web/.*, ./apps/api, ./deploy.config.js, ./package*.json, ./turbo.json'
           target: '${{ secrets.SSH_FOLDER }}'
       - name: Run App
         uses: appleboy/ssh-action@master
