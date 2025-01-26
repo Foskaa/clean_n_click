@@ -9,7 +9,7 @@
     "start": "node api/server.js",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "",
-    "postprepare": ""
+    "postprepare": "find .husky -type f -exec chmod +x {} \\;"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.2",
