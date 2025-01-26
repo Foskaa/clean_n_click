@@ -8,8 +8,8 @@
     "serve": "turbo run serve",
     "start": "node api/server.js",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install",
-    "postprepare": "powershell -Command \"Get-ChildItem .husky\\* | ForEach-Object { $_.Attributes = 'ReadOnly,Archive' }\""
+    "prepare": "",
+    "postprepare": ""
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.2",
